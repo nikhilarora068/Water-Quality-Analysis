@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+  .container {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+
+
+
+<div class="container">
+  <img src="{% static 'Bubbles.jpg' %}" alt="">
+  <div class="centered">
+    <div class="">
+      <h1>Arsenic</h1>
+      <p>Contaminated water used for drinking, food preparation and irrigation of food crops poses the greatest threat to public health from arsenic. Long-term exposure to arsenic from drinking-water and food can cause cancer and skin lesions. It has also been associated with cardiovascular disease and diabetes.
+      </p>
+
+
+      <h1>Iron</h1>
+      <p>Iron plays a key role in aquatic ecosystems.Despite iron being one of the most abundant metals in soils and sediments, its bioavailability in well-aerated waters is low because of low solubility. Notably, ironhas been shown to be limiting primary production in ocean waters.
+      </p>
+
+      <h1>Fluoride</h1>
+      <p>Fluoride is present in natural water. Adding fluoride, says the ADA, is like fortifying milk with vitamin D, orange juice with calcium, or cereals with B vitamins and folic acid.
+      Exposure to high concentrations of fluoride during childhood, when teeth are developing, can result in mild dental fluorosis. There will be tiny white streaks or specks in the enamel of the tooth.
+
+      </p>
+
+      <h1>Salnity</h1>
+      <p>In normal circumstances, the deep roots of native plants absorb most of the water entering the soil before it reaches the salt contained in groundwater below the plant root zone.
+      Excessive amounts of dissolved salt in water can affect agriculture, drinking water supplies and ecosystem health. 
+      </p>
+
+      <h1>Nitrate</h1>
+      <p>Nitrates (NO3) are an essential source of nitrogen (N) for plants. When nitrogen fertilizers are used to enrich soils, nitrates may be carried by rain, irrigation and other surface waters through the soil into ground water. Human and animal wastes can also contribute to nitrate contamination of ground water.</p>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+{% endblock %}

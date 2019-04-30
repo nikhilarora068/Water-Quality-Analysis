@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+
+<!-- <div class="w3-container h-100" >
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black">Click Here to see Water Quality Parameters of Various Indian States.</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="{% url 'state_chart' 'assam' %}" class="w3-bar-item w3-button">Assam</a>
+      <a href="{% url 'state_chart' 'arunanchalpradesh' %}" class="w3-bar-item w3-button">Arunachal Pradesh</a>
+      <a href="{% url 'state_chart' 'andhrapradesh' %}" class="w3-bar-item w3-button">Andhra Pradesh</a>
+
+      <a href="{% url 'state_chart' 'bihar' %}" class="w3-bar-item w3-button">Bihar</a>
+      <a href="{% url 'state_chart' 'chattisgarh' %}" class="w3-bar-item w3-button">Chattisgarh</a>
+      <a href="{% url 'state_chart' 'gujarat' %}" class="w3-bar-item w3-button">Gujarat</a>
+      <a href="{% url 'state_chart' 'haryana' %}" class="w3-bar-item w3-button">Haryana</a>
+      <a href="{% url 'state_chart' 'himanchalpradesh' %}" class="w3-bar-item w3-button">Himachal Pradesh</a>
+      <a href="{% url 'state_chart' 'jammuandkashmir' %}" class="w3-bar-item w3-button">Jammu KAshmir</a>
+      <a href="{% url 'state_chart' 'jharkhand' %}" class="w3-bar-item w3-button">Jharkhand</a>
+      <a href="{% url 'state_chart' 'karnataka' %}" class="w3-bar-item w3-button">Karnataka</a>
+      <a href="{% url 'state_chart' 'kerala' %}" class="w3-bar-item w3-button">Kerala</a>
+      <a href="{% url 'state_chart' 'madhyapradesh' %}" class="w3-bar-item w3-button">Madhya Pradesh</a>
+      <a href="{% url 'state_chart' 'maharashtra' %}" class="w3-bar-item w3-button">Maharashtra</a>
+      <a href="{% url 'state_chart' 'manipur' %}" class="w3-bar-item w3-button">Manipur</a>
+      <a href="{% url 'state_chart' 'meghalaya' %}" class="w3-bar-item w3-button">Meghalaya</a>
+
+      <a href="{% url 'state_chart' 'nagaland' %}" class="w3-bar-item w3-button">Nagaland</a>
+      <a href="{% url 'state_chart' 'orissa' %}" class="w3-bar-item w3-button">Orissa</a>
+      <a href="{% url 'state_chart' 'puducherry' %}" class="w3-bar-item w3-button">Puducherry</a>
+      <a href="{% url 'state_chart' 'punjab' %}" class="w3-bar-item w3-button">Punjab</a>
+      <a href="{% url 'state_chart' 'rajasthan' %}" class="w3-bar-item w3-button">Rajasthan</a>
+      <a href="{% url 'state_chart' 'tamlinadu' %}" class="w3-bar-item w3-button">Tamil Nsdu</a>
+
+      <a href="{% url 'state_chart' 'tripura' %}" class="w3-bar-item w3-button">Tripura</a>
+      <a href="{% url 'state_chart' 'uttarpradesh' %}" class="w3-bar-item w3-button">Uttarpradesh</a>
+      <a href="{% url 'state_chart' 'uttrakhand' %}" class="w3-bar-item w3-button">Uttrakhand</a>
+      <a href="{% url 'state_chart' 'westbengal' %}" class="w3-bar-item w3-button">West Bengal</a>
+    </div>
+  </div>
+</div> -->
+
+
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+<div class="w3-container" id="chart-1">
+  {{ output|safe }}
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+{% endblock %}
