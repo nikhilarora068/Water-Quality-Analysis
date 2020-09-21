@@ -25,7 +25,7 @@ SECRET_KEY = 'm$vy+rs_uvqzeg$ah)2^nt$(il6#ob6e#zqtn82=7z$=k^eih%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["waterqualityindex.herokuapp.com"]
 
 
 # Application definition
@@ -118,7 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-STATIC_ROOT ='index/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATIC_URL = '/static/'
 
