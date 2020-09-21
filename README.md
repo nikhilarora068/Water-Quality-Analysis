@@ -3,7 +3,7 @@
 
 # Water-Quality-Analysis
 
-This project provides statistical information about water indicex of all the indian states. This information can be proved to be valuable in analysis of water quality of an individual state. The dataset used has been included in the project
+This project provides statistical information about water indices of all the indian states. This information can be proved to be valuable in analysis of water quality of an individual state. The dataset used has been included in the project
 
 ## Live Demo - http://waterqualityindex.herokuapp.com/
 
